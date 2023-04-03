@@ -6,4 +6,27 @@ body {
 
 main{
     flex-grow: 1;
+    background-image: linear-gradient(to right bottom, #003343, #004452, #00555e, #006666, #03786a);
+}
+
+.cuadroFecha{
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.cuadroHora{
+    background-color: rgba(0, 0, 0, 0.56);
+}
+
+.hour{
+    font-size: 5.5em;
+}
+
+.pmSegundos{
+    font-size: 2em;
+    font-display: 10px;
+}
+
+.pmSegundos p {
+    padding: 0px;
+    margin: 0px;
 }
