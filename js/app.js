@@ -34,8 +34,6 @@ function actualizarReloj() {
     "Diciembre",
   ];
 
-  
-
   let pFecha = document.getElementById("actualizarFecha");
   pFecha.innerHTML = `${
     diasSemana[fechaActual.getDay()]
@@ -44,16 +42,16 @@ function actualizarReloj() {
   } de ${fechaActual.getFullYear()}`;
 
   let pHora = document.getElementById("actualizarHora");
-  pHora.innerHTML = `${formatoHora}: ${fechaActual.getMinutes()}`;
+  pHora.innerHTML = `${formatoHora}: ${fechaActual.getMinutes()} :`;
 
   let pAmPm = document.getElementById("ampm");
   pAmPm.innerHTML = `${ampm}`;
 
   let pSegundos = document.getElementById("actualizarSegundos");
 
-  pSegundos.innerHTML = `${fechaActual.getSeconds() < 10 ? '0' : ''}${fechaActual.getSeconds()}`
-
+  pSegundos.innerHTML = `${
+    fechaActual.getSeconds() < 10 ? "0" : ""
+  }${fechaActual.getSeconds()}`;
 }
 
 setInterval(actualizarReloj, 100);
-
