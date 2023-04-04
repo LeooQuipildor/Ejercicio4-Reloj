@@ -7,24 +7,24 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-main{
+main {
     flex-grow: 1;
     background-image: linear-gradient(to right bottom, #003343, #004452, #00555e, #006666, #03786a);
 }
 
-.cuadroFecha{
+.cuadroFecha {
     background-color: rgba(0, 0, 0, 0.56);
 }
 
-.cuadroHora{
+.cuadroHora {
     background-color: rgba(0, 0, 0, 0.56);
 }
 
-.hour{
+.hour {
     font-size: 3.8em;
 }
 
-.pmSegundos p{
+.pmSegundos p {
     font-size: 2em;
     height: 1em;
 }
@@ -39,21 +39,23 @@ main{
 }
 
 @media (min-width: 768px) and (max-width:991px) {
-    .hour{
+    .hour {
         font-size: 7.5em;
     }
-    .pmSegundos p{
+
+    .pmSegundos p {
         font-size: 3.5em;
         height: 1em;
         padding-top: 18px;
     }
 }
 
-@media (min-width: 992px){
-    .hour{
+@media (min-width: 992px) {
+    .hour {
         font-size: 10em;
     }
-    .pmSegundos p{
+
+    .pmSegundos p {
         font-size: 4.5em;
         height: 1em;
         padding-top: 18px;
