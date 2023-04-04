@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Manrope', sans-serif;
 }
 
 main{
@@ -18,15 +21,41 @@ main{
 }
 
 .hour{
-    font-size: 5.5em;
+    font-size: 3.8em;
 }
 
-.pmSegundos{
+.pmSegundos p{
     font-size: 2em;
-    font-display: 10px;
+    height: 1em;
 }
 
 .pmSegundos p {
     padding: 0px;
     margin: 0px;
+}
+
+.contenido {
+    padding-top: 15%;
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+    .hour{
+        font-size: 7.5em;
+    }
+    .pmSegundos p{
+        font-size: 3.5em;
+        height: 1em;
+        padding-top: 18px;
+    }
+}
+
+@media (min-width: 992px){
+    .hour{
+        font-size: 10em;
+    }
+    .pmSegundos p{
+        font-size: 4.5em;
+        height: 1em;
+        padding-top: 18px;
+    }
 }
